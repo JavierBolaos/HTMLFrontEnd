@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Reposteros</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="PasteleriaBanner.png" alt="PasteleriaBanner" width="700px">
+    <br><br>
+    <h1>Datos de pasteleria</h1>
+    <hr>
+    <h2>Cantidad de sabores restantes</h2>
+    <label for="pasteles">Cocolate</label>
+    <input type="number" name="choco" id="choco" value="3">
+    <br>
+    <label for="pasteles">Tres Leches</label>
+    <input type="number" name="leches" id="leches" value="4">
+    <br>
+    <label for="pasteles">Trufa</label>
+    <input type="number" name="trufa" id="trufa" value="2">
+    <br>
+    <label for="pasteles">Queso</label>
+    <input type="number" name="queso" id="queso" value="6">
+    <br>
+    <label for="pasteles">Mil Hojas</label>
+    <input type="number" name="mhojas" id="mhojas" value="5">
+    <br>
+    <label for="pasteles">Zarzamora</label>
+    <input type="number" name="zarza" id="zarza" value="9">
+    <br>
+    <label for="pasteles">Imposible</label>
+    <input type="number" name="impo" id="impo" value="6">
+    <br>
+    <label for="pasteles">Chesee Cake</label>
+    <input type="number" name="cake" id="cake" value="2">
+    <br>
+
+
+    <hr>
+    <h2>Cantidad de adornos restantes</h2>
+    <label for="pasteles">Crema Pastelera</label>
+    <input type="number" name="choco" id="cpas" value="3">
+    <br>
+    <label for="pasteles">Crema Chantilli</label>
+    <input type="number" name="leches" id="cchan" value="4">
+    <br>
+    <label for="pasteles">Cubierta de chocolate</label>
+    <input type="number" name="trufa" id="cchoco" value="2">
+    <br>
+    <label for="pasteles">Canela en Polvo</label>
+    <input type="number" name="queso" id="canpol" value="6">
+    <br>
+    
+
+    <hr>
+    <header>
+        <h2>Pedidos</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h3>Cliente</h3>
+                <p>Nombre</p>
+                <p>Telefono</p>
+                <p>Correo electronico</p>
+
+                
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Datos</h1>
+            <p>Javier</p>
+            <p>5586102845</p>
+            <p>ikarannie@gmail.com</p>
+        </article>
+        
+    </section>
+
+    <section>
+        <nav>
+            <ul>
+                <h3>Pastel</h3>
+                <p>Sabor Principal</p>
+                <p>Sabores Extras</p>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Descripcion del pastel</h1>
+            <p>Chocolate</p>
+            <p>Zarzamora</p>
+        </article>
+        
+    </section>
+
+    <section>
+        <nav>
+            <ul>
+                <h3>Decoraciones</h3>
+                <p>Decoracion Principal</p>
+                <p>Decoraciones extras</p>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Descripcion de la decoracion</h1>
+            <p>Crema pastelera en la orilla del pastel</p>
+            <p>Canela molida en forma de corazon al centro </p>
+        </article>
+        
+    </section>
+
+    <footer>
+        <p>Contenidos</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
